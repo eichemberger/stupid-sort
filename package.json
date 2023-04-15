@@ -1,0 +1,25 @@
+{
+  "name": "stupid-sort",
+  "version": "1.0.0",
+  "description": "sorts an array using bogosort",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "stupid-sort": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eichemberger/stupid-sort.git"
+  },
+  "keywords": [
+    "sort",
+    "bogosort"
+  ],
+  "author": "German Eichemberger",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

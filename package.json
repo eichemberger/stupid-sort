@@ -1,6 +1,6 @@
 {
   "name": "stupid-sort",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sorts an array using bogosort",
   "main": "index.js",
   "scripts": {

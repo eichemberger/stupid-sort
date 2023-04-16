@@ -1,6 +1,6 @@
-function isSorted(arr) {
+function isSorted(arr, compareFn) {
   for (let i = 1; i < arr.length; i++) {
-    if (arr[i - 1] > arr[i]) {
+    if (compareFn(arr[i - 1], arr[i]) > 0) {
       return false;
     }
   }
@@ -14,8 +14,12 @@ function shuffle(arr) {
   }
 }
 
-function stupidSort(arr) {
-  while (!isSorted(arr)) {
+function defaultCompareFn(a, b) {
+  return a - b;
+}
+
+function stupidSort(arr, compareFn = defaultCompareFn) {
+  while (!isSorted(arr, compareFn)) {
     shuffle(arr);
   }
 }

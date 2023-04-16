@@ -25,6 +25,26 @@ stupidSort(arr);
 console.log(arr); // The sorted array will be printed, but note that the algorithm is very inefficient!
 ```
 
+You can also use a custom comparison function to sort other data types or specify a different sorting order:
+
+```javascript
+const stupidSort = require("stupid-sort");
+
+let arr = [
+  { name: "banana" },
+  { name: "apple" },
+  { name: "kiwi" },
+  { name: "grape" },
+  { name: "orange" },
+];
+
+const compareFunction = (a, b) => a.name.localeCompare(b.name);
+
+stupidSort(arr, compareFunction);
+
+console.log(arr); // The sorted array of objects will be printed, sorted by the 'name' attribute
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

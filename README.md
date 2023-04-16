@@ -1,6 +1,4 @@
-[![npm version](https://badge.fury.io/js/stupid-sort.svg)](https://badge.fury.io/js/stupid-sort)
-
-# Stupid Sort (Bogosort)
+# Stupid Sort (Bogosort) [![npm version](https://badge.fury.io/js/stupid-sort.svg)](https://badge.fury.io/js/stupid-sort)
 
 Stupid Sort is an npm package that implements the highly inefficient [Bogosort](https://en.wikipedia.org/wiki/Bogosort) algorithm, also known as stupid sort or slowsort. This algorithm works by randomly shuffling the input list until it is sorted.
 
@@ -69,5 +67,5 @@ npm install -g stupid-sort
 Then, you can use the `stupid-sort` command to sort a list of numbers:
 
 ```bash
-stupid-sort 3 1 4 1 5 9
+stupid-sort 3,1,4,1,5,9
 ```
